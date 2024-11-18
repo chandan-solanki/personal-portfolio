@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Custom cursor element -->
+    <div class="cursor"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  <script>
+    const cursor = document.querySelector(".cursor");
+
+    document.addEventListener("mousemove", (e) => {
+      // Move the custom cursor element to follow the mouse
+      cursor.style.left = `${e.pageX + 5}px`;
+      cursor.style.top = `${e.pageY + 5}px`;
+      cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
+    });
+
+    window.addEventListener("scroll", function () {
+      // We will need to update the cursor position after scroll as well
+      const fromTop = parseInt(cursor.getAttribute("data-fromTop"));
+      cursor.style.top = scrollY + fromTop + "px";
+    });
+  </script>
+</html>

@@ -1,0 +1,42 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore video files (e.g., .mp4, .mov, .avi)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Ignore image files (e.g., .jpg, .png, .gif, .svg)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.svg
+
+# Ignore other common media files
+*.mp3
+*.wav
+*.ogg
+*.flac
+
+# Ignore logs
+*.log
+
+# Ignore environment files (e.g., .env)
+.env
+
+# Ignore IDE files (e.g., VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Ignore build directories
+/dist/
+/build/
+/out/
