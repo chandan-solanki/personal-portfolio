@@ -28,7 +28,7 @@ const Faqs = () => {
 
   const handleClick = (e) => {
     // console.log(e.currentTarget.parentElement.parentElement);
-    const questionParent = e.currentTarget.parentElement.parentElement;
+    const questionParent = e.currentTarget .parentElement.parentElement;
     let ansHeight = questionParent.childNodes[1].offsetHeight;
     console.log({ ansHeight });
 

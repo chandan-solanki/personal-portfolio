@@ -9,6 +9,8 @@ import vvideo3 from "../assets/Luke Belmar.mp4";
 const MyWorkSection = () => {
   const videoControl = (e) => {
     let video = e.currentTarget;
+    console.log(video);
+    
     // video.muted = false;
     if (video.muted) {
       video.muted = false;
@@ -42,6 +44,7 @@ const MyWorkSection = () => {
             height="360"
             autoPlay
             controls
+            loop
             muted
           >
             <source src={vvideo1} type="video/mp4" />
