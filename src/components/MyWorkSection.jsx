@@ -10,7 +10,7 @@ const MyWorkSection = () => {
   const videoControl = (e) => {
     let video = e.currentTarget;
     console.log(video);
-    
+
     // video.muted = false;
     if (video.muted) {
       video.muted = false;
@@ -25,16 +25,14 @@ const MyWorkSection = () => {
       video.pause(); // Pause the video
       //   video.muted = false;
     }
-
   };
 
   return (
     <div id="mywork" className="section work-section">
-      <h1 className="title">I Help You Go Viral…FAST</h1>
+      <h1 className="title">Your Content 🤝 My Editing</h1>
       <span className="black-text">
-        Many channels I work with go viral within 1-2 videos. I use my proven
-        YouTube processes to get results for your channel time and time again,
-        with 30M+ views for creators just like you.
+        I use proven editing techniques tailored to your needs to achieve the
+        results you desire.
       </span>
       <div className="vertical-video-container">
         <div className="vertical-video">

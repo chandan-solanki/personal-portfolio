@@ -15,21 +15,22 @@ const HeroSection = () => {
     <div id="home" className="section hero-section">
       <div className="hero-title-container">
         <h1 className="hero-title">
-          Use viral <span>YouTube Strategy</span> to blow up your channel
+          Take Your <span>Content </span>to the Next Level
         </h1>
 
         <div className="hero-des">
           <span>
-            I'm Nate Curtiss, founder of N8Wealth. I help creators and brands
-            blow up their YouTube channels, boasting over 30M views across my
-            clients and personal channels.
+            Unlock your video’s full potential with expert editing that
+            captivates and inspires. Whether you’re growing your YouTube channel
+            or elevating your brand, I’ll bring your vision to life. Let’s
+            create something extraordinary!
           </span>
         </div>
 
-        <button className="hero-btn">I Want Youtube Results</button>
+        {/* <button className="hero-btn">I Want Youtube Results</button> */}
       </div>
 
-      <div className="hero-review">
+      {/* <div className="hero-review">
         <div className="hero-review-title">
           Join dozens of channels I've helped go insanely viral in their niches,
           fast.
@@ -73,7 +74,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="do-section">
         <h1 className="title">What do i do ?</h1>
@@ -115,8 +116,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="main-review">
-
+      {/* <div className="main-review">
         <div className="left-review">
           <img src={img6} alt="review-img" />
           <div className="left-review-text">
@@ -131,13 +131,9 @@ const HeroSection = () => {
           A quality that’s extremely rare in this space, but is very present
           with Nate.
         </div>
+      </div> */}
 
-
-      </div>
-
-      <button className="book-btn">
-          Book a Free Call
-        </button>
+      <button className="book-btn">Book a Free Call</button>
     </div>
   );
 };

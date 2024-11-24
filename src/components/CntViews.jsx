@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 const CntViews = () => {
   const [cnting, setCnting] = useState([
-    { id: 1, start: 500, cnt: 1007, for: "Video Created" },
-    { id: 2, start: 0, cnt: 10, for: "Million Views" },
-    { id: 3, start: 50000, cnt: 71850, for: "Total Viewcount (hrs)" },
+    { id: 1, start: 1000, cnt: 1217, for: "Video Created" },
+    { id: 2, start: 0, cnt: 30, for: "Million Views" },
+    { id: 3, start: 133300, cnt: 133477, for: "Total Viewcount (hrs)" },
   ]);
   const [cntActive, cntSetActive] = useState(false);
 
@@ -45,40 +45,44 @@ const CntViews = () => {
 
   useEffect(() => {
     console.log();
+    let cnt1 = cnting[0].start;
+    let cnt2 = cnting[1].start;
+    let cnt3 = cnting[2].start;
     if (cntActive) {
-      let cnt1 = cnting[0].start;
-      let cnt2 = cnting[1].start;
-      let cnt3 = cnting[2].start;
       // videoref.current.textContent = 100;
       let id1 = setInterval(() => {
         if (cnt1 >= cnting[0].cnt) {
           clearInterval(id1);
+        } else if (cnt1 < cnting[0].cnt) {
+          videoref.current.textContent = cnt1;
+          cnt1 += 1;
         }
-
-        videoref.current.textContent = cnt1;
-        cnt1 += 10;
       }, 10);
 
       let id2 = setInterval(() => {
         if (cnt2 >= cnting[1].cnt) {
           clearInterval(id2);
+        } else {
+          cnt2 += 1;
+          millionref.current.textContent = cnt2;
         }
-
-        millionref.current.textContent = cnt2;
-        cnt2 += 1;
-      }, 100);
+      }, 50);
 
       let id3 = setInterval(() => {
         if (cnt3 >= cnting[2].cnt) {
           clearInterval(id3);
+        } else {
+          hourref.current.textContent = cnt3;
+          cnt3 += 1;
         }
-
-        hourref.current.textContent = cnt3;
-        cnt3 += 200;
       }, 10);
     }
 
-    // return clearInterval(id);
+    return () => {
+      // clearInterval(id1);
+      // clearInterval(id2);
+      // clearInterval(id3);
+    };
   }, [cntActive]);
 
   return (
@@ -86,18 +90,18 @@ const CntViews = () => {
       <div className="line"></div>
       <div className="main-cntview">
         <div className="cnt-box">
-          <h1 ref={videoref}>68887</h1>
+          <h1 ref={videoref}>{cnting[0].start}</h1>
           <h2>Video Created</h2>
         </div>
         <div className="vertical-line"></div>
         <div className="cnt-box">
-          <h1 ref={millionref}>10</h1>
+          <h1 ref={millionref}>{cnting[1].start}</h1>
           <h2>Million+ views</h2>
         </div>
         <div className="vertical-line"></div>
 
         <div className="cnt-box">
-          <h1 ref={hourref}>143567</h1>
+          <h1 ref={hourref}>{cnting[2].start}</h1>
           <h2>Total Viewcount (hrs)</h2>
         </div>
       </div>

@@ -4,8 +4,11 @@ const Footer = () => {
       <div className="footer-section">
         <div className="footer-left">
           <div className="footer-title">
-            <h1 className="title">Let's work together!</h1>
-            <span> really want to blow up your channel.</span>
+            <h1 className="title">Ready to transform your videos?</h1>
+            <span>
+              Book a 15-minute call to create a system tailored to your editing
+              needs and craft a game plan to make your content stand out.
+            </span>
           </div>
           <button className="footer-btn book-btn">Book a Free Call</button>
         </div>
@@ -20,9 +23,11 @@ const Footer = () => {
         </div>
       </div>
 
-        <div className="line"></div>
+      <div className="line"></div>
       <div className="footer-last">
-        <span>© Copyright {new Date().getFullYear()} N8Wealth. All rights reserved.</span>
+        <span>
+          © Copyright {new Date().getFullYear()} N8Wealth. All rights reserved.
+        </span>
         <span>Website by Ryasen Design</span>
       </div>
     </div>

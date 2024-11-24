@@ -1,4 +1,5 @@
 import { useState } from "react";
+import faqIcon from "../assets/faqicon.svg";
 
 const questionsApi = [
   {
@@ -26,9 +27,11 @@ const questionsApi = [
 const Faqs = () => {
   const [questions, setQuestions] = useState(questionsApi);
 
+
+  //handle click for fqs expand or not (logic)
   const handleClick = (e) => {
     // console.log(e.currentTarget.parentElement.parentElement);
-    const questionParent = e.currentTarget .parentElement.parentElement;
+    const questionParent = e.currentTarget.parentElement.parentElement;
     let ansHeight = questionParent.childNodes[1].offsetHeight;
     console.log({ ansHeight });
 
@@ -51,7 +54,12 @@ const Faqs = () => {
 
   return (
     <div className="faqs-container">
-      <h1 className="title">FAQs</h1>
+      <div className="faq-title title">
+        <div className="faq-icon">
+          <img src={faqIcon} alt="faq-icon" />
+        </div>{" "}
+        <h1 className="title">FAQs</h1>
+      </div>
       {questions.map((ques) => {
         return (
           <div key={ques.id} className="questions">

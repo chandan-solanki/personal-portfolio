@@ -3,13 +3,42 @@ import profileImg from "../assets/asset 11.png";
 import Faqs from "./Faqs";
 import CntViews from "./CntViews";
 
+import vvideo1 from "../assets/Grace Beverley Podcast hb.mp4";
+import vvideo2 from "../assets/Joey.mp4";
+
 const Testimonials = ({ popActive, setPopActive }) => {
   return (
     <div id="testimonials" className="section testimonials-section">
       <h1 className="title">Don't just take it from me…</h1>
 
       <div className="testimonials-container">
-        <div className="testi-box">
+        <div className="testi-video vertical-video">
+          <video
+            onClick={() => {}}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={vvideo1} type="video/mp4" />
+          </video>
+        </div>
+        <div className="testi-video vertical-video">
+          <video
+            onClick={() => {}}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={vvideo2} type="video/mp4" />
+          </video>
+        </div>
+        {/* <div className="testi-box">
           <span className="testi-text">
             Nate is…the person behind me realizing I could be maximizing my
             YouTube Channel a lot more. He went over my processes and made them
@@ -50,7 +79,7 @@ const Testimonials = ({ popActive, setPopActive }) => {
               <span>Youtuber</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="whoami">
@@ -62,7 +91,17 @@ const Testimonials = ({ popActive, setPopActive }) => {
 
         <div className="whoami-profile">
           <img src={profileImg} alt="profile-img" />
-          <div className="profile-title">
+
+          <div className="right-profile">
+            <h1>Hi, I'm Nainesh</h1>
+            <p>
+              a video editor with over 5 years of experience. I help creators
+              and brands boost engagement and views through my editing. Oh, and
+              that’s not all about me. I also love reading books, music, and
+              tech.
+            </p>
+          </div>
+          {/* <div className="profile-title">
             <div>
               <h3 className="pink-clr">Nate Curtiss</h3>
               <span>30M views on YouTube</span>
@@ -74,7 +113,7 @@ const Testimonials = ({ popActive, setPopActive }) => {
               View Bio
               <span className="arrow-btn">&rarr;</span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
