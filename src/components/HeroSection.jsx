@@ -1,21 +1,13 @@
-import img1 from "../assets/asset 1.jpeg";
-import img2 from "../assets/asset 2.jpeg";
-import img3 from "../assets/asset 3.jpeg";
-import img4 from "../assets/asset 4.jpeg";
-import img5 from "../assets/asset 5.jpeg";
-import img6 from "../assets/asset 6.jpeg";
-import img7 from "../assets/asset 7.jpeg";
-import img8 from "../assets/asset 8.png";
-import img9 from "../assets/asset 9.png";
-import start from "../assets/asset 13.svg";
-import bulb from "../assets/asset 15.svg";
+import bookCall from "../assets/Book a call.svg";
+import revisionImg from "../assets/Revision.svg";
+import calendarImg from "../assets/calendar.svg";
 
 const HeroSection = () => {
   return (
     <div id="home" className="section hero-section">
       <div className="hero-title-container">
         <h1 className="hero-title">
-          Take Your <span>Content </span>to the Next Level
+          Take Your <span>Content to the Next Level</span>
         </h1>
 
         <div className="hero-des">
@@ -82,35 +74,42 @@ const HeroSection = () => {
           To give myself the most control over the performance of posted videos,
           I take care of the following responsibilities for my clients.
         </span>
+
         <div className="box-container">
           <div className="box">
             <div className="box-title">
-              <span>Video ideas</span>
-              <img className="box-img" src={bulb} alt="" />
+              <h1>Book a Call</h1>
+              <span className="box-text">
+                15 minutes to talk about your goals and needs
+              </span>
             </div>
-            <div className="box-text">
-              I come up with viral video ideas in your niche with the potential
-              to get 100s of thousands, and even millions of views.
-            </div>
-          </div>
-          <div className="box">
-            <div className="box-title">
-              <span>Video ideas</span>
-              <img className="box-img" src={bulb} alt="" />
-            </div>
-            <div className="box-text">
-              I come up with viral video ideas in your niche with the potential
-              to get 100s of thousands, and even millions of views.
+
+            <div className="box-img">
+              <img src={calendarImg} alt="call-img" />
             </div>
           </div>
           <div className="box">
             <div className="box-title">
-              <span>Video ideas</span>
-              <img className="box-img" src={bulb} alt="" />
+              <h1>Workflow</h1>
+              <span className="box-text">
+                Steps we go through to create a finished video edit
+              </span>
             </div>
-            <div className="box-text">
-              I come up with viral video ideas in your niche with the potential
-              to get 100s of thousands, and even millions of views.
+
+            <div className="box-img">
+              <img src={bookCall} alt="call-img" />
+            </div>
+          </div>
+          <div className="box">
+            <div className="box-title">
+              <h1>Revisions</h1>
+              <span className="box-text">
+                Not satisfied with something, no worries, we can correct that
+              </span>
+            </div>
+
+            <div className="box-img">
+              <img src={revisionImg} alt="revision-img" />
             </div>
           </div>
         </div>

@@ -4,29 +4,28 @@ import faqIcon from "../assets/faqicon.svg";
 const questionsApi = [
   {
     id: 1,
-    question: "What do we do ?",
-    ans: "We focus on producing visually stunning short-form videos designed specifically for your brand which helps you captivate your audience and achieve your goals.",
+    question: "How does the pricing work ?",
+    ans: "Pricing is based on the length, style, and number of videos you need. DM me on X (Twitter) for a custom quote or book a call to discuss your project.",
   },
   {
     id: 2,
-    question: "Why short-form videos ?",
-    ans: "Short-form videos are the fastest and most effective way to capture attention in today's fast-paced digital world. They're an excellent medium for showcasing expertise, convey your message and forge profound connections with your audience.",
+    question: "Why choose me ?",
+    ans: "With a deep understanding of audience behavior, expertise in crafting impactful content, and a personalized approach dedicated to your success, I’m the ideal partner to bring your vision to life.",
   },
   {
     id: 3,
-    question: "What choose us?",
-    ans: "We at SyncwaveMedia, create short-form videos that break the scroll barrier. With our deep understanding of audience behavior, expertise in crafting impactful content paired with our personalized approach and dedication to your success, we're your ideal partner to bring your vision to life.",
+    question: "What do I need to provide ?",
+    ans: "Just share your raw footage and give me some direction on how you’d like your video edited—then leave the rest to me",
   },
   {
     id: 4,
-    question: "What do we do ?",
-    ans: "While the convenience of an in-house video editor may seem tempting, the hidden costs of training and aligning him with your brand's values can drain your most valuable asset 'TIME'. Choosing us unlocks unparalleled advantages such as: tailored short-form video production, access to a diverse team of experts, streamlined workflow, elevated content quality and amplified impact.",
+    question: "What does your process look like?",
+    ans: "It’s simple! We start with a call to discuss your needs, and I get to work right away.",
   },
 ];
 
 const Faqs = () => {
   const [questions, setQuestions] = useState(questionsApi);
-
 
   //handle click for fqs expand or not (logic)
   const handleClick = (e) => {
