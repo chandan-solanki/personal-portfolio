@@ -113,6 +113,8 @@
 
 @media screen and (max-width :850px) {
 
+
+
     .title {
         font-size: 26px;
     }
@@ -127,7 +129,7 @@
         color: #ff63b4;
     }
 
-    
+
     .whoami-profile img {
         width: 100%;
         height: auto;
@@ -297,6 +299,10 @@
     .ans {
         margin-top: 3.5rem;
         top: 0;
+    }
+
+    .footer-btn {
+        width: 65%;
     }
 }
 

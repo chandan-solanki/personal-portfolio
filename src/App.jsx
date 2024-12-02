@@ -31,13 +31,16 @@ function App() {
   }, []);
 
   return (
-    <div className="main-app">
-      <NavBar />
-      <HeroSection />
-      <MyWorkSection />
-      <Testimonials popActive={popActive} setPopActive={setPopActive} />
-      <Footer />
-      <PopUp ref={popRef} setPopActive={setPopActive} popActive={popActive} />
+    <div>
+      <div className="main-app">
+      {/* <div className="background"></div> */}
+        <NavBar />
+        <HeroSection />
+        <MyWorkSection />
+        <Testimonials popActive={popActive} setPopActive={setPopActive} />
+        <Footer />
+        <PopUp ref={popRef} setPopActive={setPopActive} popActive={popActive} />
+      </div>
     </div>
   );
 }

@@ -10,7 +10,12 @@ const Footer = () => {
               needs and craft a game plan to make your content stand out.
             </span>
           </div>
-          <button className="footer-btn book-btn">Book a Free Call</button>
+          <button className="footer-btn book-btn">
+            {" "}
+            <a href="https://calendly.com/nseditingservice/30min">
+              Book a Free Call
+            </a>{" "}
+          </button>
         </div>
         <div className="footer-right">
           <h3>Social</h3>

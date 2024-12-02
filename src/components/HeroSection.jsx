@@ -1,6 +1,6 @@
 import bookCall from "../assets/Book a call.svg";
 import revisionImg from "../assets/Revision.svg";
-import calendarImg from "../assets/calendar.svg";
+import calendarImg from "../assets/calendar 2.svg";
 
 const HeroSection = () => {
   return (
@@ -132,7 +132,13 @@ const HeroSection = () => {
         </div>
       </div> */}
 
-      <button className="book-btn">Book a Free Call</button>
+      <button className="book-btn">
+        {" "}
+        <a href="https://calendly.com/nseditingservice/30min">
+          {" "}
+          Book a Free Call
+        </a>{" "}
+      </button>
     </div>
   );
 };
