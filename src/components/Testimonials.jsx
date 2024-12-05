@@ -1,12 +1,15 @@
-import testiImg from "../assets/asset 4.jpeg";
-import profileImg from "../assets/asset 11.png";
+
+import profileImg from "../assets/my photo (1).png";
 import Faqs from "./Faqs";
 import CntViews from "./CntViews";
+
+import ytlogo1 from "../assets/ytlogo1.jpg";
+import ytlogo2 from "../assets/ytlogo2.jfif";
 
 import vvideo1 from "../assets/Grace Beverley Podcast hb.mp4";
 import vvideo2 from "../assets/Joey.mp4";
 
-const Testimonials = ({ popActive, setPopActive }) => {
+const Testimonials = () => {
   return (
     <div id="testimonials" className="section testimonials-section">
       <h1 className="title">Don't just take it from me…</h1>
@@ -24,6 +27,15 @@ const Testimonials = ({ popActive, setPopActive }) => {
           >
             <source src={vvideo1} type="video/mp4" />
           </video>
+          <div className="channel-circle">
+            <div className="author-img">
+              <img src={ytlogo2} alt="" />
+            </div>
+            <div className="author-info">
+              <span className="pink-clr">Shubham Mittal</span>
+              <span className="black-text">Author</span>
+            </div>
+          </div>
         </div>
         <div className="testi-video vertical-video">
           <video
@@ -37,49 +49,16 @@ const Testimonials = ({ popActive, setPopActive }) => {
           >
             <source src={vvideo2} type="video/mp4" />
           </video>
-        </div>
-        {/* <div className="testi-box">
-          <span className="testi-text">
-            Nate is…the person behind me realizing I could be maximizing my
-            YouTube Channel a lot more. He went over my processes and made them
-            more efficient. He is extremely knowledgeable.
-          </span>
-          <div className="testi-review-box">
-            <img src={testiImg} alt="testi-img" />
-            <div className="testi-review-text">
-              <h4 className="pink-clr">Aaron Battley </h4>
-              <span>Youtuber</span>
+          <div className="channel-circle">
+            <div className="author-img">
+              <img src={ytlogo1} alt="" />
+            </div>
+            <div className="author-info">
+              <span className="pink-clr">Dear Sir</span>
+              <span className="black-text">19M</span>
             </div>
           </div>
         </div>
-        <div className="testi-box">
-          <span className="testi-text">
-            Nate is…the person behind me realizing I could be maximizing my
-            YouTube Channel a lot more. He went over my processes and made them
-            more efficient. He is extremely knowledgeable.
-          </span>
-          <div className="testi-review-box">
-            <img src={testiImg} alt="testi-img" />
-            <div className="testi-review-text">
-              <h4 className="pink-clr">Aaron Battley </h4>
-              <span>Youtuber</span>
-            </div>
-          </div>
-        </div>
-        <div className="testi-box">
-          <span className="testi-text">
-            Nate is…the person behind me realizing I could be maximizing my
-            YouTube Channel a lot more. He went over my processes and made them
-            more efficient. He is extremely knowledgeable.
-          </span>
-          <div className="testi-review-box">
-            <img src={testiImg} alt="testi-img" />
-            <div className="testi-review-text">
-              <h4 className="pink-clr">Aaron Battley </h4>
-              <span>Youtuber</span>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className="whoami">

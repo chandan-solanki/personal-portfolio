@@ -5,6 +5,10 @@
   --pinkBorderColor: rgba(255, 99, 180, .29);
 }
 
+body {
+  background-color: #191919;
+}
+
 .cursor {
   position: absolute;
   width: 25px;
@@ -33,6 +37,8 @@
   font-style: normal;
   background-color: #191919;
   overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .background {
@@ -424,7 +430,7 @@
 }
 
 .box-title {
-  width: 100%;  
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -516,7 +522,7 @@
   display: block;
   cursor: none;
   transition: all .2s ease-in-out;
-  background: linear-gradient(to right ,#c401de, #6f0d9e);
+  background: linear-gradient(to right, #c401de, #6f0d9e);
   color: white;
   border: none;
 
@@ -534,7 +540,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100%;
   cursor: none;
+  width: 100%;
 }
 
 
@@ -671,13 +679,14 @@
 .whoami-profile {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   margin-top: 2rem;
   overflow: hidden;
   border-radius: 10px;
   backdrop-filter: blur(8px);
   background-color: #ededed0a;
+  padding: 3rem;
 }
 
 .right-profile {
@@ -701,9 +710,11 @@
 }
 
 .whoami-profile img {
-  width: 600px;
+  width: 30%;
   height: auto;
-  object-position: center bottom;
+  object-position: center;
+  object-fit: cover;
+  transform: rotate(-3deg);
 }
 
 .profile-title {
@@ -719,6 +730,7 @@
 
 .pink-clr {
   color: #AD00ED;
+  font-weight: 600;
 }
 
 .bio-btn {
@@ -761,6 +773,55 @@
 
 .bio-btn:hover.bio-btn span {
   opacity: 1;
+}
+
+.channel-container {
+  display: grid;
+  margin-top: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.channel-circle {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+.channel-circle .author-img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid pink;
+}
+
+.channel-circle .author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  justify-content: start;
+  align-items: start;
+}
+
+.author-info span {
+  display: inline-block;
+  width: 100%;
+  text-align: start;
+  font-size: 16px;
+}
+
+.youtube-work-section {
+  width: 100%;
 }
 
 /* ------------ FOOTER SECTION ------ */

@@ -33,11 +33,10 @@ function App() {
   return (
     <div>
       <div className="main-app">
-      {/* <div className="background"></div> */}
         <NavBar />
         <HeroSection />
         <MyWorkSection />
-        <Testimonials popActive={popActive} setPopActive={setPopActive} />
+        <Testimonials />
         <Footer />
         <PopUp ref={popRef} setPopActive={setPopActive} popActive={popActive} />
       </div>

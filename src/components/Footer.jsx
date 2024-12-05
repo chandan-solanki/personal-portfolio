@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="line"></div>
       <div className="footer-last">
         <span>
-          © Copyright {new Date().getFullYear()} N8Wealth. All rights reserved.
+          © Copyright {new Date().getFullYear()} NSEditingService. All rights reserved.
         </span>
         <span>Website by Ryasen Design</span>
       </div>
