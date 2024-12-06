@@ -42,11 +42,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .book-btn {
-        border-radius: 68px;
-        opacity: 1;
-        width: 70%;
-    }
 
     .box {
         width: 100%;
@@ -69,7 +64,6 @@
     }
 
     .book-btn {
-        border-radius: 68px;
         opacity: 1;
         width: 41%;
     }
@@ -116,6 +110,12 @@
         height: auto;
         object-position: center bottom;
     }
+
+    .work-with-btn{
+       
+        width: 100%;
+        /* margin-top: 1rem; */
+      }
 
 }
 
@@ -284,7 +284,7 @@
     }
 
     .book-btn {
-        border-radius: 68px;
+        border-radius: 12px;
         opacity: 1;
         width: 100%;
     }

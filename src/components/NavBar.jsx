@@ -11,7 +11,7 @@ const NavBar = () => {
   }
 
   useEffect(() => {
-    console.log(navbarRef.current);
+    // console.log(navbarRef.current);
     document.addEventListener("click", (e) => {
       if (
         !navbarRef.current.contains(e.target) &&
@@ -29,7 +29,7 @@ const NavBar = () => {
     const navbarHeight = navbarRef.current ? navbarRef.current.offsetHeight : 0;
     // const targetPosition = section.offsetTop - navbarHeight;
     const targetPosition = section.offsetTop - navbarHeight - 100;
-    console.log({targetPosition})
+    // console.log({targetPosition})
 
     window.scrollTo({
       top: targetPosition,

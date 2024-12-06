@@ -8,11 +8,13 @@ import Footer from "./components/Footer";
 import PopUp from "./components/PopUp";
 import { useEffect, useRef, useState } from "react";
 
+//https://x.com/messages/compose?text=EDIT&amp;recipient_id=ns_nainesh
+
 function App() {
   const popRef = useRef(null);
   const [popActive, setPopActive] = useState(false);
 
-  console.log({ popActive });
+  // console.log({ popActive });
 
   useEffect(() => {
     popRef.current.style.top = scrollY + "px";
@@ -23,10 +25,10 @@ function App() {
 
   useEffect(() => {
     if (window.matchMedia("(pointer: coarse)").matches) {
-      console.log("Touchscreen device detected.");
+      // console.log("Touchscreen device detected.");
       document.querySelector(".cursor").style.display = "none";
     } else {
-      console.log("Non-touchscreen device.");
+      // console.log("Non-touchscreen device.");
     }
   }, []);
 

@@ -1,13 +1,10 @@
-import bookCall from "../assets/Book a call.svg";
-import revisionImg from "../assets/Revision.svg";
-import calendarImg from "../assets/calendar 2.svg";
 
 const HeroSection = () => {
   return (
     <div id="home" className="section hero-section">
       <div className="hero-title-container">
         <h1 className="hero-title">
-          Take Your <span>Content to the Next Level</span>
+          <span>Take Your Content to the Next Level</span>
         </h1>
 
         <div className="hero-des">
@@ -68,52 +65,6 @@ const HeroSection = () => {
         </div>
       </div> */}
 
-      <div className="do-section">
-        <h1 className="title">What do i do ?</h1>
-        <span className="black-text">
-          To give myself the most control over the performance of posted videos,
-          I take care of the following responsibilities for my clients.
-        </span>
-
-        <div className="box-container">
-          <div className="box">
-            <div className="box-title">
-              <h1>Book a Call</h1>
-              <span className="box-text">
-                15 minutes to talk about your goals and needs
-              </span>
-            </div>
-
-            <div className="box-img">
-              <img src={calendarImg} alt="call-img" />
-            </div>
-          </div>
-          <div className="box">
-            <div className="box-title">
-              <h1>Workflow</h1>
-              <span className="box-text">
-                Steps we go through to create a finished video edit
-              </span>
-            </div>
-
-            <div className="box-img">
-              <img src={bookCall} alt="call-img" />
-            </div>
-          </div>
-          <div className="box">
-            <div className="box-title">
-              <h1>Revisions</h1>
-              <span className="box-text">
-                Not satisfied with something, no worries, we can correct that
-              </span>
-            </div>
-
-            <div className="box-img">
-              <img src={revisionImg} alt="revision-img" />
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* <div className="main-review">
         <div className="left-review">

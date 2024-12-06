@@ -4,17 +4,17 @@ import faqIcon from "../assets/faqicon.svg";
 const questionsApi = [
   {
     id: 1,
-    question: "How does the pricing work ?",
+    question: "How does the pricing work?",
     ans: "Pricing is based on the length, style, and number of videos you need. DM me on X (Twitter) for a custom quote or book a call to discuss your project.",
   },
   {
     id: 2,
-    question: "Why choose me ?",
+    question: "Why choose me?",
     ans: "With a deep understanding of audience behavior, expertise in crafting impactful content, and a personalized approach dedicated to your success, I’m the ideal partner to bring your vision to life.",
   },
   {
     id: 3,
-    question: "What do I need to provide ?",
+    question: "What do I need to provide?",
     ans: "Just share your raw footage and give me some direction on how you’d like your video edited—then leave the rest to me",
   },
   {
@@ -32,7 +32,7 @@ const Faqs = () => {
     // console.log(e.currentTarget.parentElement.parentElement);
     const questionParent = e.currentTarget.parentElement.parentElement;
     let ansHeight = questionParent.childNodes[1].offsetHeight;
-    console.log({ ansHeight });
+    // console.log({ ansHeight });
 
     if (questionParent.classList.contains("active")) {
       questionParent.classList.remove("active");

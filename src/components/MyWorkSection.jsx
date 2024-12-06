@@ -1,15 +1,17 @@
-import cryptoVideo from "../assets/Crypto Video.mp4";
-import ankurVideo from "../assets/Primary EP 12 - Ankur Jain Trailer v2.mp4";
-import creatorImg from "../assets/asset 6.jpeg";
+import horizontalvideo1 from "../assets/Primary Ep 12 - Ankur Jain Trailer V2.mp4";
+import horizontalvideo2 from "../assets/Climb Test Task V2.mp4";
+import handsShakeImg from "../assets/handshake_img.png";
 
-import vvideo1 from "../assets/Grace Beverley Podcast hb.mp4";
-import vvideo2 from "../assets/Joey.mp4";
-import vvideo3 from "../assets/Luke Belmar.mp4";
+import vvideo1 from "../assets/Grace Beverley Podcast Short.mp4";
+import vvideo2 from "../assets/Wyatt.mp4";
+import vvideo3 from "../assets/Finy8.mp4";
+import vvideo4 from "../assets/Aliens 3 V2.mp4";
+import CntViews from "./CntViews";
 
 const MyWorkSection = () => {
   const videoControl = (e) => {
     let video = e.currentTarget;
-    console.log(video);
+    // console.log(video);
 
     // video.muted = false;
     if (video.muted) {
@@ -29,7 +31,7 @@ const MyWorkSection = () => {
 
   return (
     <div id="mywork" className="section work-section">
-      <h1 className="title">Your Content 🤝 My Editing</h1>
+      <h1 className="title">Your Content <span className="handshake-img"> <img src={handsShakeImg} alt="handshake-img" /></span> My Editing</h1>
       <span className="black-text">
         I use proven editing techniques tailored to your needs to achieve the
         results you desire.
@@ -84,7 +86,7 @@ const MyWorkSection = () => {
             loop
             muted
           >
-            <source src={vvideo1} type="video/mp4" />
+            <source src={vvideo4} type="video/mp4" />
           </video>
         </div>
       </div>
@@ -100,7 +102,7 @@ const MyWorkSection = () => {
               controls
               muted
             >
-              <source src={cryptoVideo} type="video/mp4" />
+              <source src={horizontalvideo1} type="video/mp4" />
             </video>
           </div>
         </div>
@@ -115,46 +117,13 @@ const MyWorkSection = () => {
               controls
               muted
             >
-              <source src={cryptoVideo} type="video/mp4" />
-            </video>
-          </div>
-          {/* <div className="yt-title">
-            <h3>Monopoly GO's EVIL Strategy to Make You Poor</h3>
-            <span>1M Views</span>
-          </div>
-          <div className="creator-name">Belinda Ercan</div> */}
-        </div>
-        <div className="video-box">
-          <div className="yt-video">
-            <video
-              onClick={videoControl}
-              width="640"
-              height="360"
-              autoPlay
-              controls
-              loop
-              muted
-            >
-              <source src={cryptoVideo} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div className="video-box">
-          <div className="yt-video">
-            <video
-              onClick={videoControl}
-              width="640"
-              height="360"
-              autoPlay
-              controls
-              loop
-              muted
-            >
-              <source src={cryptoVideo} type="video/mp4" />
+              <source src={horizontalvideo2} type="video/mp4" />
             </video>
           </div>
         </div>
       </div>
+
+      <CntViews/>
     </div>
   );
 };

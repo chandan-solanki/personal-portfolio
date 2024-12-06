@@ -20,10 +20,10 @@ const Footer = () => {
         <div className="footer-right">
           <h3>Social</h3>
           <div className="footer-links">
-            <a href="">Youtube</a>
-            <a href="">Instagram</a>
-            <a href="">Twitter</a>
-            <a href="">Linkdin</a>
+            <a href="https://www.youtube.com/@nseditingservice">Youtube</a>
+            <a href="https://ig.me/m/ns_nainesh">Instagram</a>
+            <a href="https://x.com/ns_nainesh">Twitter</a>
+            <a href="https://www.linkedin.com/in/ns-nainesh-b68979139/?trk=opento_sprofile_details">Linkdin</a>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Footer = () => {
         <span>
           © Copyright {new Date().getFullYear()} NSEditingService. All rights reserved.
         </span>
-        <span>Website by Ryasen Design</span>
+        {/* <span>Website by Ryasen Design</span> */}
       </div>
     </div>
   );

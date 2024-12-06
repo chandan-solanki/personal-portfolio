@@ -44,7 +44,7 @@ const CntViews = () => {
   const hourref = useRef(null);
 
   useEffect(() => {
-    console.log();
+    // console.log();
     let cnt1 = cnting[0].start;
     let cnt2 = cnting[1].start;
     let cnt3 = cnting[2].start;

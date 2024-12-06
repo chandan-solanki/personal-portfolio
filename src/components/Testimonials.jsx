@@ -1,13 +1,13 @@
-
-import profileImg from "../assets/my photo (1).png";
+import profileImg from "../assets/my photo new.png";
 import Faqs from "./Faqs";
 import CntViews from "./CntViews";
 
 import ytlogo1 from "../assets/ytlogo1.jpg";
 import ytlogo2 from "../assets/ytlogo2.jfif";
 
-import vvideo1 from "../assets/Grace Beverley Podcast hb.mp4";
-import vvideo2 from "../assets/Joey.mp4";
+import vvideo1 from "../assets/Shubham Mittal Testimonial.mp4";
+import vvideo2 from "../assets/Dearsir - Testimonial.mp4";
+import DoSection from "./DoSection";
 
 const Testimonials = () => {
   return (
@@ -55,30 +55,42 @@ const Testimonials = () => {
             </div>
             <div className="author-info">
               <span className="pink-clr">Dear Sir</span>
-              <span className="black-text">19M</span>
+              <span className="black-text">19M Subscribers</span>
             </div>
           </div>
         </div>
       </div>
 
+      <DoSection />
+
       <div className="whoami">
-        <h1 className="title">So, who am I?</h1>
+        {/* <h1 className="title">So, who am I?</h1>
         <span className="whoami-text black-text">
           I have over 4 years of experience on YouTube with a storied background
           in content creation. Learn more about me below.
-        </span>
+        </span> */}
 
         <div className="whoami-profile">
           <img src={profileImg} alt="profile-img" />
 
           <div className="right-profile">
-            <h1>Hi, I'm Nainesh</h1>
+            <h1>Face Behind the Brand</h1>
             <p>
-              a video editor with over 5 years of experience. I help creators
-              and brands boost engagement and views through my editing. Oh, and
-              that’s not all about me. I also love reading books, music, and
-              tech.
+              Hi, I'm Nainesh, a video editor with over 5 years of experience. I
+              help creators and brands boost engagement and views through my
+              editing.
             </p>
+            <p>
+              Oh, and that’s not all about me. I also love reading books, music,
+              and tech.
+            </p>
+            <button className="work-with-btn book-btn">
+              {" "}
+              <a href="https://calendly.com/nseditingservice/30min">
+                {" "}
+                Work with me
+              </a>{" "}
+            </button>
           </div>
           {/* <div className="profile-title">
             <div>
@@ -95,8 +107,6 @@ const Testimonials = () => {
           </div> */}
         </div>
       </div>
-
-      <CntViews />
 
       <Faqs />
     </div>
