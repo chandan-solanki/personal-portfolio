@@ -13,7 +13,7 @@ const Footer = () => {
           <button className="footer-btn book-btn">
             {" "}
             <a href="https://calendly.com/nseditingservice/30min">
-              Book a Free Call
+              Book a Call
             </a>{" "}
           </button>
         </div>

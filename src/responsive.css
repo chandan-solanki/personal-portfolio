@@ -43,6 +43,7 @@
     }
 
 
+
     .box {
         width: 100%;
         display: flex;
@@ -99,7 +100,7 @@
     }
 
     .title {
-        font-size: 31px;
+        font-size: 3rem;
     }
 
 
@@ -111,21 +112,38 @@
         object-position: center bottom;
     }
 
-    .work-with-btn{
-       
+    .work-with-btn {
+
         width: 100%;
         /* margin-top: 1rem; */
-      }
+    }
+
+    .work-section h1 {
+        gap: .5rem;
+    }
+
+    .box-title h1 {
+        font-size: 2rem;
+    }
+
 
 }
 
 @media screen and (max-width :850px) {
-
-
+    .work-section h1 {
+        gap: .5rem;
+    }
 
     .title {
-        font-size: 26px;
+        font-size: 2rem;
     }
+
+
+    .box-title h1 {
+        font-size: 1rem;
+    }
+
+
 
     .whoami-profile {
         flex-direction: column;
@@ -310,12 +328,17 @@
     }
 
     .footer-btn {
-        width: 65%;
+        width: 90%;
+        font-size: 1.1rem;
     }
 
     .channel-circle .author-img {
         width: 45px;
         height: 45px;
+    }
+
+    .hero-section {
+        padding-top: 7rem;
     }
 }
 
@@ -325,6 +348,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         margin-top: 2rem;
+    }
+
+    .footer-title span {
+        width: 95%;
     }
 
     .question-title {
@@ -343,7 +370,6 @@
         display: flex;
         padding-bottom: 3rem;
         justify-content: space-between;
-        flex-direction: column;
         align-items: start;
         gap: 2rem;
     }
@@ -375,5 +401,18 @@
 
     .bio-btn {
         width: 33%;
+    }
+
+    .work-section h1 {
+        gap: .5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .footer-title h1 {
+        text-align: start;
+        font-size: 1.3rem;
     }
 }
