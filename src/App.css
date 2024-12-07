@@ -582,11 +582,12 @@ body {
 /* ------ WORK SECTION ------------ */
 
 
-.work-with-btn{
+.work-with-btn {
   margin: 0;
   width: 20%;
   /* margin-top: 1rem; */
 }
+
 .work-section {
   margin-top: 1.65rem;
   display: flex;
@@ -729,7 +730,7 @@ body {
   border-radius: 10px;
   backdrop-filter: blur(8px);
   /* background-color: #ededed0a; */
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 
 .right-profile {
@@ -928,11 +929,11 @@ body {
 
 .line {
   width: 100%;
+  opacity: .3;
   height: 1px;
   border-radius: 3px;
   background-color: var(--whiteTextColor);
 }
-
 
 .vertical-video-container {
   display: flex;
@@ -1007,7 +1008,7 @@ body {
   justify-content: start;
   position: relative;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid var(--whiteTextColor);
   width: 60%;
   margin: auto;
@@ -1015,7 +1016,7 @@ body {
   backdrop-filter: blur(8px);
   background-color: #ededed0a;
   border: 1px solid #AD00ED4a;
-  height: 100px;
+  height: auto;
   transition: all .2s ease-in-out;
 }
 
@@ -1052,7 +1053,7 @@ body {
 .ans {
   position: absolute;
   top: 0%;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   opacity: 0;
   line-height: 1.3rem;
   visibility: hidden;

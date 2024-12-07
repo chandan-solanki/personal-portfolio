@@ -27,12 +27,11 @@ const questionsApi = [
 const Faqs = () => {
   const [questions, setQuestions] = useState(questionsApi);
 
-  //handle click for fqs expand or not (logic)
-  const handleClick = (e) => {
-    // console.log(e.currentTarget.parentElement.parentElement);
-    const questionParent = e.currentTarget.parentElement.parentElement;
+  const handleClickQuestions = (e) => {
+    console.log(e.currentTarget);
+    const questionParent = e.currentTarget;
     let ansHeight = questionParent.childNodes[1].offsetHeight;
-    // console.log({ ansHeight });
+    console.log({ ansHeight });
 
     if (questionParent.classList.contains("active")) {
       questionParent.classList.remove("active");
@@ -42,12 +41,6 @@ const Faqs = () => {
       questionParent.style.height = `${
         questionParent.offsetHeight + ansHeight
       }px`;
-    }
-
-    if (e.currentTarget.classList.contains("active-ans")) {
-      e.currentTarget.classList.remove("active-ans");
-    } else {
-      e.currentTarget.classList.add("active-ans");
     }
   };
 
@@ -61,12 +54,14 @@ const Faqs = () => {
       </div>
       {questions.map((ques) => {
         return (
-          <div key={ques.id} className="questions">
+          <div
+            onClick={handleClickQuestions}
+            key={ques.id}
+            className="questions"
+          >
             <div className="question-title">
               <span>{ques.question}</span>
-              <span onClick={handleClick} className="close-ques-btn">
-                &#65291;
-              </span>
+              <span className="close-ques-btn">&#65291;</span>
             </div>
             <div className="ans">{ques.ans}</div>
           </div>

@@ -23,7 +23,7 @@ const Footer = () => {
             <a href="https://www.youtube.com/@nseditingservice">Youtube</a>
             <a href="https://ig.me/m/ns_nainesh">Instagram</a>
             <a href="https://x.com/ns_nainesh">Twitter</a>
-            <a href="https://www.linkedin.com/in/ns-nainesh-b68979139/?trk=opento_sprofile_details">Linkdin</a>
+            <a href="https://www.linkedin.com/in/ns-nainesh-b68979139/?trk=opento_sprofile_details">LinkedIn</a>
           </div>
         </div>
       </div>
