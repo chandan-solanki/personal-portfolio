@@ -1,5 +1,5 @@
 import horizontalvideo1 from "../assets/Primary Ep 12 - Ankur Jain Trailer V2.mp4";
-import horizontalvideo2 from "../assets/Climb Test Task V2.mp4";
+import horizontalvideo2 from "../assets/Happiness Final V2.mp4";
 import handsShakeImg from "../assets/handshake_img.png";
 
 import vvideo1 from "../assets/Grace Beverley Podcast Short.mp4";

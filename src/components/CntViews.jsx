@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const CntViews = () => {
   const [cnting, setCnting] = useState([
     { id: 1, start: 1000, cnt: 1217, for: "Video Created" },
-    { id: 2, start: 0, cnt: 30, for: "Million Views" },
+    { id: 2, start: 10, cnt: 30, for: "Million Views" },
     { id: 3, start: 133300, cnt: 133477, for: "Total Viewcount (hrs)" },
   ]);
   const [cntActive, cntSetActive] = useState(false);
