@@ -1,4 +1,5 @@
 import horizontalvideo1 from "../assets/Primary Ep 12 - Ankur Jain Trailer V2.mp4";
+import mainhorizontalvideo1 from "../assets/Animations.mp4";
 import horizontalvideo2 from "../assets/Happiness Final V2.mp4";
 import handsShakeImg from "../assets/handshake_img.png";
 
@@ -90,6 +91,23 @@ const MyWorkSection = () => {
           </video>
         </div>
       </div>
+
+      <div className="video-box video-box-horizontal">
+          <div className="yt-video">
+            <video
+              onClick={videoControl}
+              width=""
+              height=""
+              autoPlay
+              loop
+              controls
+              muted
+            >
+              <source src={mainhorizontalvideo1} type="video/mp4" />
+            </video>
+          </div>
+      </div>
+
       <div className="video-container">
         <div className="video-box">
           <div className="yt-video">

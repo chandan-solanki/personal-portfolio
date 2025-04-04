@@ -870,6 +870,21 @@ body {
   width: 100%;
 }
 
+.video-box-horizontal {
+  width: auto;
+  padding: 1rem;
+  /* border: 3px solid red; */
+}
+.video-box-horizontal .yt-video {
+  height: auto;
+}
+
+.video-box-horizontal .yt-video video{
+  height: 95%;
+  width: 100%;
+}
+
+
 /* ------------ FOOTER SECTION ------ */
 
 .footer-main {

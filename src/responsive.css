@@ -340,6 +340,10 @@
     .hero-section {
         padding-top: 7rem;
     }
+
+    .work-section {
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-width :650px) {
