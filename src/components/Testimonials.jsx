@@ -4,9 +4,11 @@ import CntViews from "./CntViews";
 
 import ytlogo1 from "../assets/ytlogo1.jpg";
 import ytlogo2 from "../assets/ytlogo2.jfif";
+import aliLogo from "../assets/ali agent logo.jpeg";
 
 import vvideo1 from "../assets/Shubham Mittal Testimonial.mp4";
 import vvideo2 from "../assets/Dearsir - Testimonial.mp4";
+import aliAgentVideo from "../assets/Ali The Agent Testi Post.mp4";
 import DoSection from "./DoSection";
 
 const Testimonials = () => {
@@ -34,6 +36,28 @@ const Testimonials = () => {
             <div className="author-info">
               <span className="pink-clr">Shubham Mittal</span>
               <span className="black-text">Author</span>
+            </div>
+          </div>
+        </div>
+        <div className="testi-video vertical-video">
+          <video
+            onClick={() => {}}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={aliAgentVideo} type="video/mp4" />
+          </video>
+          <div className="channel-circle">
+            <div className="author-img">
+              <img src={aliLogo} alt="" />
+            </div>
+            <div className="author-info">
+              <span className="pink-clr">Ali the Agent</span>
+              <span className="black-text">Real Estate Agent</span>
             </div>
           </div>
         </div>
