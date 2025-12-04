@@ -5,10 +5,14 @@ import CntViews from "./CntViews";
 import ytlogo1 from "../assets/ytlogo1.jpg";
 import ytlogo2 from "../assets/ytlogo2.jfif";
 import aliLogo from "../assets/ali agent logo.jpeg";
+import bijonProfile from "../assets/bijon profile img.jpeg";
+import KylaMontanoProfile from "../assets/Kyla Montano.jpeg";
 
 import vvideo1 from "../assets/Shubham Mittal Testimonial.mp4";
 import vvideo2 from "../assets/Dearsir - Testimonial.mp4";
 import aliAgentVideo from "../assets/Ali The Agent Testi Post.mp4";
+import BjionTestimonial from "../assets/Bjion - Testimonial.mp4";
+import kylaVideo from "../assets/Kyla Testimonial.mp4";
 import DoSection from "./DoSection";
 
 const Testimonials = () => {
@@ -17,6 +21,28 @@ const Testimonials = () => {
       <h1 className="title">Don't just take it from me…</h1>
 
       <div className="testimonials-container">
+        <div className="testi-video vertical-video">
+          <video
+            onClick={() => {}}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={BjionTestimonial} type="video/mp4" />
+          </video>
+          <div className="channel-circle">
+            <div className="author-img">
+              <img src={bijonProfile} alt="bijon-profile" />
+            </div>
+            <div className="author-info">
+              <span className="pink-clr">Bjion Henry</span>
+              <span className="black-text">CEO of navreo.ai</span>
+            </div>
+          </div>
+        </div>
         <div className="testi-video vertical-video">
           <video
             onClick={() => {}}
@@ -80,6 +106,28 @@ const Testimonials = () => {
             <div className="author-info">
               <span className="pink-clr">Dear Sir</span>
               <span className="black-text">19M Subscribers</span>
+            </div>
+          </div>
+        </div>
+        <div className="testi-video vertical-video">
+          <video
+            onClick={() => {}}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={kylaVideo} type="video/mp4" />
+          </video>
+          <div className="channel-circle">
+            <div className="author-img">
+              <img src={KylaMontanoProfile} alt="" />
+            </div>
+            <div className="author-info">
+              <span className="pink-clr">Kyla Montano</span>
+              <span className="black-text">Real Estate Agent</span>
             </div>
           </div>
         </div>
