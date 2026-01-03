@@ -22,11 +22,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #ff4d0024;
+  background-color: #ff4d001a;
   pointer-events: none;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: +100;
+  /* border-radius: 50%; */
   box-shadow: #ff4d00 -2px 9px 68px 2px;
 }
 
@@ -875,11 +876,12 @@ body {
   padding: 1rem;
   /* border: 3px solid red; */
 }
+
 .video-box-horizontal .yt-video {
   height: auto;
 }
 
-.video-box-horizontal .yt-video video{
+.video-box-horizontal .yt-video video {
   height: 95%;
   width: 100%;
 }
