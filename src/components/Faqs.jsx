@@ -1,5 +1,5 @@
 import { useState } from "react";
-import faqIcon from "../assets/faqicon.svg";
+import faqIcon from "../assets/faq.png";
 
 const questionsApi = [
   {

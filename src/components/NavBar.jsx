@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import logo from "../assets/NS Editing Service Logo Violet.png";
+import logo from "../assets/NS Editing Service Orange Logo.png";
 
 const NavBar = () => {
   const [activeMenu, setActiveMenu] = useState(false);

@@ -2,7 +2,7 @@
   --whiteTextColor: #eeeeee;
   --blackTextColor: #ababab;
 
-  --pinkBorderColor: rgba(255, 99, 180, .29);
+  --pinkBorderColor: rgba(255, 77, 0, .29);
 }
 
 body {
@@ -22,12 +22,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #ab47bc24;
+  background-color: #ff4d0024;
   pointer-events: none;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: +100;
-  box-shadow: #ab47bc -2px 9px 68px 2px;
+  box-shadow: #ff4d00 -2px 9px 68px 2px;
 }
 
 
@@ -193,8 +193,8 @@ body {
 
 
 .hero-title span {
-  color: #AD00ED;
-  background: linear-gradient(#c401de, #6f0d9e);
+  color: #ff4d00;
+  background: linear-gradient(#ff4d00, #ff7400);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +208,7 @@ body {
   font-size: 18px;
   line-height: 31px;
   font-weight: 600;
-  background-color: #AD00ED;
+  background-color: #ff4d00;
   border: none;
   outline: none;
   transition: all .2s ease-in;
@@ -216,7 +216,7 @@ body {
 }
 
 .hero-btn:hover {
-  background-color: #c44386;
+  background-color: #ff7400;
 }
 
 .hero-review {
@@ -356,7 +356,7 @@ body {
   width: 40%;
   height: 42px;
   margin-top: 2.5rem;
-  color: #AD00ED;
+  color: #ff4d00;
   font-size: 16px;
   background-color: #ededed0a;
   transition: all .2s ease-in-out;
@@ -503,7 +503,7 @@ body {
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  border-color: #AD00ED4a;
+  border-color: #ff4d004a;
   border-width: 2px;
   border-style: solid;
   background-color: #ededed0a;
@@ -547,12 +547,12 @@ body {
   font-size: 20px;
   height: 60px;
   font-weight: 700;
-  background-color: #AD00ED;
+  background-color: #ff4d00;
   margin: 2rem auto;
   display: block;
   cursor: none;
   transition: all .2s ease-in-out;
-  background: linear-gradient(to right, #c401de, #6f0d9e);
+  background: linear-gradient(to right, #ff4d00, #ff7400);
   color: white;
   border: none;
 
@@ -560,7 +560,7 @@ body {
 
 .book-btn:hover {
   /* width: 20%; */
-  background-color: #7d08a8;
+  background-color: #ff7400;
 }
 
 .book-btn a {
@@ -625,7 +625,7 @@ body {
 }
 
 .yt-title span {
-  color: #AD00ED;
+  color: #ff4d00;
 }
 
 .creator-name {
@@ -683,7 +683,7 @@ body {
   border-radius: 8px;
   backdrop-filter: blur(8px);
   background-color: #ededed0a;
-  border: 1px solid #AD00ED4a;
+  border: 1px solid #ff4d004a;
 }
 
 .testi-text {
@@ -775,15 +775,15 @@ body {
 }
 
 .pink-clr {
-  color: #AD00ED;
+  color: #ff4d00;
   font-weight: 600;
 }
 
 .bio-btn {
   background: transparent;
-  color: #AD00ED;
+  color: #ff4d00;
   font-weight: 600;
-  border: 1px solid #AD00ED;
+  border: 1px solid #ff4d00;
   border-radius: 25px;
   position: relative;
   text-align: left;
@@ -1006,7 +1006,7 @@ body {
 }
 
 .video-details span {
-  color: #AD00ED;
+  color: #ff4d00;
 }
 
 .faqs-container {
@@ -1030,7 +1030,7 @@ body {
   border-radius: 10px;
   backdrop-filter: blur(8px);
   background-color: #ededed0a;
-  border: 1px solid #AD00ED4a;
+  border: 1px solid #ff4d004a;
   height: auto;
   transition: all .2s ease-in-out;
 }
@@ -1161,7 +1161,7 @@ body {
 }
 
 .popup-main h2 {
-  color: #AD00ED;
+  color: #ff4d00;
 }
 
 .popup-main p {
@@ -1200,7 +1200,7 @@ body {
 .hamburger-menu span {
   width: 100%;
   height: 5px;
-  background-color: #AD00ED;
+  background-color: #ff4d00;
   border-radius: 10PX;
   transition: all .2s ease-in-out;
 }

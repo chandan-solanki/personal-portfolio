@@ -1,6 +1,7 @@
 import horizontalvideo1 from "../assets/Primary Ep 12 - Ankur Jain Trailer V2.mp4";
 import mainhorizontalvideo1 from "../assets/Animations.mp4";
 import horizontalvideo2 from "../assets/Happiness Final V2.mp4";
+import horizontalvideo3 from "../assets/Real Estate Edit Highlights.mp4";
 import handsShakeImg from "../assets/handshake_img.png";
 
 import vvideo1 from "../assets/Grace Beverley Podcast Short.mp4";
@@ -32,7 +33,14 @@ const MyWorkSection = () => {
 
   return (
     <div id="mywork" className="section work-section">
-      <h1 className="title">Your Content <span className="handshake-img"> <img src={handsShakeImg} alt="handshake-img" /></span> My Editing</h1>
+      <h1 className="title">
+        Your Content{" "}
+        <span className="handshake-img">
+          {" "}
+          <img src={handsShakeImg} alt="handshake-img" />
+        </span>{" "}
+        My Editing
+      </h1>
       <span className="black-text">
         I use proven editing techniques tailored to your needs to achieve the
         results you desire.
@@ -92,23 +100,38 @@ const MyWorkSection = () => {
         </div>
       </div>
 
-      <div className="video-box video-box-horizontal">
+      {/* <div className="video-box video-box-horizontal">
+        <div className="yt-video">
+          <video
+            onClick={videoControl}
+            width=""
+            height=""
+            autoPlay
+            loop
+            controls
+            muted
+          >
+            <source src={mainhorizontalvideo1} type="video/mp4" />
+          </video>
+        </div>
+      </div> */}
+
+      <div className="video-container">
+        <div className="video-box">
           <div className="yt-video">
             <video
               onClick={videoControl}
-              width=""
-              height=""
+              width="640"
+              height="360"
               autoPlay
               loop
               controls
               muted
             >
-              <source src={mainhorizontalvideo1} type="video/mp4" />
+              <source src={horizontalvideo3} type="video/mp4" />
             </video>
           </div>
-      </div>
-
-      <div className="video-container">
+        </div>
         <div className="video-box">
           <div className="yt-video">
             <video
@@ -139,9 +162,24 @@ const MyWorkSection = () => {
             </video>
           </div>
         </div>
+        <div className="video-box">
+          <div className="yt-video">
+            <video
+              onClick={videoControl}
+              width="640"
+              height="360"
+              autoPlay
+              loop
+              controls
+              muted
+            >
+              <source src={mainhorizontalvideo1} type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
 
-      <CntViews/>
+      <CntViews />
     </div>
   );
 };
