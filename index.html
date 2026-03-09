@@ -24,21 +24,13 @@
     <div class="cursor"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = `${e.clientX + 5}px`;
+        cursor.style.top = `${e.clientY + 5}px`;
+      });
+    </script>
   </body>
-  <script>
-    const cursor = document.querySelector(".cursor");
-
-    document.addEventListener("mousemove", (e) => {
-      // Move the custom cursor element to follow the mouse
-      cursor.style.left = `${e.pageX + 5}px`;
-      cursor.style.top = `${e.pageY + 5}px`;
-      cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
-    });
-
-    window.addEventListener("scroll", function () {
-      // We will need to update the cursor position after scroll as well
-      const fromTop = parseInt(cursor.getAttribute("data-fromTop"));
-      cursor.style.top = scrollY + fromTop + "px";
-    });
-  </script>
 </html>

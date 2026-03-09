@@ -15,7 +15,7 @@ body {
 }
 
 .cursor {
-  position: absolute;
+  position: fixed;
   width: 25px;
   height: 25px;
   background-image: url(/src/assets/cursor.png);
@@ -25,10 +25,10 @@ body {
   background-color: #ff4d001a;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: +100;
+  z-index: 9999;
   /* border-radius: 50%; */
   box-shadow: #ff4d00 -2px 9px 68px 2px;
+  transition: opacity 0.15s ease;
 }
 
 
@@ -667,21 +667,109 @@ body {
   margin-top: 8rem;
   padding-bottom: 2rem;
   align-items: center;
+  overflow: hidden;
 }
 
-.testimonials-container {
+/* Swiper Testimonials */
+.testimonials-swiper-wrapper {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
   align-items: center;
+  gap: 16px;
   width: 100%;
+  padding-inline: 10px;
+  position: relative;
+}
+
+.testimonials-swiper {
+  flex: 1;
+  min-width: 0;
+  cursor: none;
+  padding-bottom: 3rem !important;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+.testi-slide {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testi-slide:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+  transition: width 0.3s ease, background 0.3s ease;
+  cursor: none !important;
+  border-radius: 4px;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  width: 24px;
+  cursor: none;
+  background: linear-gradient(to right, #fdbd28, #fd8127);
+  border-radius: 4px;
+}
+
+/* Nav Buttons */
+.testi-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(253, 189, 40, 0.5);
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(8px);
+  cursor: none;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+.testi-nav-btn:hover {
+  background: linear-gradient(135deg, #fdbd28, #fd8127);
+  border-color: transparent;
+  transform: scale(1.1);
+}
+
+.testi-nav-btn:hover > img {
+  filter:  brightness(2);
+}
+
+.testi-nav-btn:active {
+  transform: scale(0.95);
+}
+
+.testi-nav-btn.swiper-button-disabled {
+  opacity: 0.25;
+  cursor: none;
+  /* pointer-events: none; */
+}
+
+.testi-nav-btn img {
+  width: 18px;
+  height: 18px;
+  /* filter: invert(0.9); */
+  transition: filter 0.2s ease;
 }
 
 .testi-box {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 50%;
+  min-width: 350px;
+  flex-shrink: 0;
   padding: 1.3rem;
   border-radius: 8px;
   backdrop-filter: blur(8px);
@@ -989,8 +1077,9 @@ body {
 }
 
 .vertical-video video {
-  width: fit-content;
-  height: 470px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
   border-radius: 8px;
   overflow: hidden;
   border: none;

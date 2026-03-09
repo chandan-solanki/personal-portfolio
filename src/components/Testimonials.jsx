@@ -2,135 +2,123 @@ import profileImg from "../assets/my photo new.png";
 import Faqs from "./Faqs";
 import CntViews from "./CntViews";
 
+import leftArrow from "../assets/left-arrow.png";
+import rightArrow from "../assets/right-arrow.png";
 import ytlogo1 from "../assets/ytlogo1.jpg";
 import ytlogo2 from "../assets/ytlogo2.jfif";
 import aliLogo from "../assets/ali agent logo.jpeg";
 import bijonProfile from "../assets/bijon profile img.jpeg";
 import KylaMontanoProfile from "../assets/Kyla Montano.jpeg";
+import DavidProfile from "../assets/david.jpeg";
+import lizDavisProfile from "../assets/liz davis.jpeg";
 
 import vvideo1 from "../assets/Shubham Mittal Testimonial.mp4";
 import vvideo2 from "../assets/Dearsir - Testimonial.mp4";
 import aliAgentVideo from "../assets/Ali The Agent Testi Post.mp4";
 import BjionTestimonial from "../assets/Bjion - Testimonial.mp4";
 import kylaVideo from "../assets/Kyla Testimonial.mp4";
+import davidVideo from "../assets/david testimonial.mp4";
+import lizDavisVideo from "../assets/Edited Liz Davis Testimonial Website Video.mp4";
 import DoSection from "./DoSection";
 
+// Swiper imports
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+const testimonialVideos = [
+  {
+    video: lizDavisVideo,
+    img: lizDavisProfile,
+    name: "Liz Davis",
+    role: "Real Estate Agent",
+  },
+  {
+    video: aliAgentVideo,
+    img: aliLogo,
+    name: "Ali the Agent",
+    role: "Real Estate Agent",
+  },
+  {
+    video: BjionTestimonial,
+    img: bijonProfile,
+    name: "Bjion Henry",
+    role: "CEO of navreo.ai",
+  },
+
+  { video: vvideo2, img: ytlogo1, name: "Dear Sir", role: "19M Subscribers" },
+    {
+    video: davidVideo,
+    img: DavidProfile,
+    name: "David Dinat",
+    role: "Founder, ErotalMedia",
+  },
+  {
+    video: kylaVideo,
+    img: KylaMontanoProfile,
+    name: "Kyla Montano",
+    role: "Real Estate Agent",
+  },
+  { video: vvideo1, img: ytlogo2, name: "Shubham Mittal", role: "Author" },
+];
+
 const Testimonials = () => {
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
   return (
     <div id="testimonials" className="section testimonials-section">
       <h1 className="title">Don't just take it from me…</h1>
 
-      <div className="testimonials-container">
-        <div className="testi-video vertical-video">
-          <video
-            onClick={() => {}}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={BjionTestimonial} type="video/mp4" />
-          </video>
-          <div className="channel-circle">
-            <div className="author-img">
-              <img src={bijonProfile} alt="bijon-profile" />
-            </div>
-            <div className="author-info">
-              <span className="pink-clr">Bjion Henry</span>
-              <span className="black-text">CEO of navreo.ai</span>
-            </div>
-          </div>
-        </div>
-        <div className="testi-video vertical-video">
-          <video
-            onClick={() => {}}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={vvideo1} type="video/mp4" />
-          </video>
-          <div className="channel-circle">
-            <div className="author-img">
-              <img src={ytlogo2} alt="" />
-            </div>
-            <div className="author-info">
-              <span className="pink-clr">Shubham Mittal</span>
-              <span className="black-text">Author</span>
-            </div>
-          </div>
-        </div>
-        <div className="testi-video vertical-video">
-          <video
-            onClick={() => {}}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={aliAgentVideo} type="video/mp4" />
-          </video>
-          <div className="channel-circle">
-            <div className="author-img">
-              <img src={aliLogo} alt="" />
-            </div>
-            <div className="author-info">
-              <span className="pink-clr">Ali the Agent</span>
-              <span className="black-text">Real Estate Agent</span>
-            </div>
-          </div>
-        </div>
-        <div className="testi-video vertical-video">
-          <video
-            onClick={() => {}}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={vvideo2} type="video/mp4" />
-          </video>
-          <div className="channel-circle">
-            <div className="author-img">
-              <img src={ytlogo1} alt="" />
-            </div>
-            <div className="author-info">
-              <span className="pink-clr">Dear Sir</span>
-              <span className="black-text">19M Subscribers</span>
-            </div>
-          </div>
-        </div>
-        <div className="testi-video vertical-video">
-          <video
-            onClick={() => {}}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={kylaVideo} type="video/mp4" />
-          </video>
-          <div className="channel-circle">
-            <div className="author-img">
-              <img src={KylaMontanoProfile} alt="" />
-            </div>
-            <div className="author-info">
-              <span className="pink-clr">Kyla Montano</span>
-              <span className="black-text">Real Estate Agent</span>
-            </div>
-          </div>
-        </div>
+      <div className="testimonials-swiper-wrapper">
+        <button
+          className="testi-nav-btn testi-nav-prev"
+          onClick={() => swiperInstance?.slidePrev()}
+        >
+          <img src={leftArrow} alt={"left-arrow"} />
+        </button>
+
+        <Swiper
+          onSwiper={setSwiperInstance}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          spaceBetween={15}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            480: { slidesPerView: 1 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1280: { slidesPerView: 5 },
+          }}
+          className="testimonials-swiper"
+        >
+          {testimonialVideos.map((item, index) => (
+            <SwiperSlide key={index} className="testi-slide">
+              <div className="testi-video vertical-video">
+                <video width="640" height="360" autoPlay controls loop muted>
+                  <source src={item.video} type="video/mp4" />
+                </video>
+                <div className="channel-circle">
+                  <div className="author-img">
+                    <img src={item.img} alt={item.name} />
+                  </div>
+                  <div className="author-info">
+                    <span className="pink-clr">{item.name}</span>
+                    <span className="black-text">{item.role}</span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <button
+          className="testi-nav-btn testi-nav-next"
+          onClick={() => swiperInstance?.slideNext()}
+        >
+          <img src={rightArrow} alt={"right-arrow"} />
+        </button>
       </div>
 
       <DoSection />
