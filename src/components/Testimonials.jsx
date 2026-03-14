@@ -49,7 +49,7 @@ const testimonialVideos = [
   },
 
   { video: vvideo2, img: ytlogo1, name: "Dear Sir", role: "19M Subscribers" },
-    {
+  {
     video: davidVideo,
     img: DavidProfile,
     name: "David Dinat",
@@ -137,8 +137,8 @@ const Testimonials = () => {
             <h1>Face Behind the Brand</h1>
             <p>
               Hi, I'm Nainesh, a video editor with over 5 years of experience. I
-              help creators and brands boost engagement and views through my
-              editing.
+              help creators and founders to build strategic videos that drive
+              revenue and leads.
             </p>
             <p>
               Oh, and that’s not all about me. I also love reading books, music,

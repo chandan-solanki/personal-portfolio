@@ -193,7 +193,7 @@ body {
 }
 
 .hero-des {
-  color: var(--blackTextColor);
+  color: var(--whiteTextColor);
   font-size: 18px;
   text-align: center;
   width: 80%;
