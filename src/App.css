@@ -14,6 +14,14 @@ body {
     "wdth" 100;
 }
 
+
+.gradient {
+  text-decoration: none;
+  background: linear-gradient(135deg, #fdbd28, #fd8127);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .cursor {
   position: fixed;
   width: 25px;
@@ -194,12 +202,12 @@ body {
 
 
 .hero-title span {
-  color: #ff4d00;
+  color: white;
   /* background: linear-gradient(#ff7400, #ff4d00); */
-  background: linear-gradient(#fdbd28, #fd8127);
-  -webkit-background-clip: text;
+  /* background: linear-gradient(#fdbd28, #fd8127); */
+  /* -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .hero-btn {
@@ -743,8 +751,8 @@ body {
   transform: scale(1.1);
 }
 
-.testi-nav-btn:hover > img {
-  filter:  brightness(2);
+.testi-nav-btn:hover>img {
+  filter: brightness(2);
 }
 
 .testi-nav-btn:active {

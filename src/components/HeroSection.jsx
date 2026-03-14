@@ -4,15 +4,14 @@ const HeroSection = () => {
     <div id="home" className="section hero-section">
       <div className="hero-title-container">
         <h1 className="hero-title">
-          <span>Take Your Content to the Next Level</span>
+          <span>Your videos shouldn't just get views.</span>
+          <br />
+          <span className="gradient">They should bring business.</span>
         </h1>
 
         <div className="hero-des">
           <span>
-            Unlock your video’s full potential with expert editing that
-            captivates and inspires. Whether you’re growing your YouTube channel
-            or elevating your brand, I’ll bring your vision to life. Let’s
-            create something extraordinary!
+           I work with creators and founders to build strategic videos that drive revenue and leads.
           </span>
         </div>
 

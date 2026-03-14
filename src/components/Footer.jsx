@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="footer-title">
             <h1 className="title">Ready to transform your videos?</h1>
             <span>
-              Book a 15-minute call to create a system tailored to your editing
+              Book a 30-minute call to create a system tailored to your editing
               needs and craft a game plan to make your content stand out.
             </span>
           </div>
