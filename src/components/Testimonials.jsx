@@ -11,6 +11,7 @@ import bijonProfile from "../assets/bijon profile img.jpeg";
 import KylaMontanoProfile from "../assets/Kyla Montano.jpeg";
 import DavidProfile from "../assets/david.jpeg";
 import lizDavisProfile from "../assets/liz davis.jpeg";
+import DeweiZhangProfile from "../assets/Dewei Zhang profile.jpeg";
 
 import vvideo1 from "../assets/Shubham Mittal Testimonial.mp4";
 import vvideo2 from "../assets/Dearsir - Testimonial.mp4";
@@ -19,6 +20,7 @@ import BjionTestimonial from "../assets/Bjion - Testimonial.mp4";
 import kylaVideo from "../assets/Kyla Testimonial.mp4";
 import davidVideo from "../assets/david testimonial.mp4";
 import lizDavisVideo from "../assets/Edited Liz Davis Testimonial Website Video.mp4";
+import DewieVideo from "../assets/Dewie Zhang Testimonial Website Video.mp4";
 import DoSection from "./DoSection";
 
 // Swiper imports
@@ -48,6 +50,12 @@ const testimonialVideos = [
     role: "CEO of navreo.ai",
   },
 
+  {
+    video: DewieVideo,
+    img: DeweiZhangProfile,
+    name: "Dewei Zhang",
+    role: "Business Owner",
+  },
   { video: vvideo2, img: ytlogo1, name: "Dear Sir", role: "19M Subscribers" },
   {
     video: davidVideo,
