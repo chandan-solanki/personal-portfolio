@@ -45,76 +45,6 @@ const MyWorkSection = () => {
         I use proven editing techniques tailored to your needs to achieve the
         results you desire.
       </span>
-      <div className="vertical-video-container">
-        <div className="vertical-video">
-          <video
-            onClick={videoControl}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={vvideo1} type="video/mp4" />
-          </video>
-        </div>
-        <div className="vertical-video">
-          <video
-            onClick={videoControl}
-            width="640"
-            height="360"
-            autoPlay
-            loop
-            controls
-            muted
-          >
-            <source src={vvideo2} type="video/mp4" />
-          </video>
-        </div>
-        <div className="vertical-video">
-          <video
-            onClick={videoControl}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={vvideo3} type="video/mp4" />
-          </video>
-        </div>
-        <div className="vertical-video">
-          <video
-            onClick={videoControl}
-            width="640"
-            height="360"
-            autoPlay
-            controls
-            loop
-            muted
-          >
-            <source src={vvideo4} type="video/mp4" />
-          </video>
-        </div>
-      </div>
-
-      {/* <div className="video-box video-box-horizontal">
-        <div className="yt-video">
-          <video
-            onClick={videoControl}
-            width=""
-            height=""
-            autoPlay
-            loop
-            controls
-            muted
-          >
-            <source src={mainhorizontalvideo1} type="video/mp4" />
-          </video>
-        </div>
-      </div> */}
 
       <div className="video-container">
         <div className="video-box">
@@ -176,6 +106,61 @@ const MyWorkSection = () => {
               <source src={mainhorizontalvideo1} type="video/mp4" />
             </video>
           </div>
+        </div>
+      </div>
+
+      <div className="vertical-video-container">
+        <div className="vertical-video">
+          <video
+            onClick={videoControl}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={vvideo1} type="video/mp4" />
+          </video>
+        </div>
+        <div className="vertical-video">
+          <video
+            onClick={videoControl}
+            width="640"
+            height="360"
+            autoPlay
+            loop
+            controls
+            muted
+          >
+            <source src={vvideo2} type="video/mp4" />
+          </video>
+        </div>
+        <div className="vertical-video">
+          <video
+            onClick={videoControl}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={vvideo3} type="video/mp4" />
+          </video>
+        </div>
+        <div className="vertical-video">
+          <video
+            onClick={videoControl}
+            width="640"
+            height="360"
+            autoPlay
+            controls
+            loop
+            muted
+          >
+            <source src={vvideo4} type="video/mp4" />
+          </video>
         </div>
       </div>
 

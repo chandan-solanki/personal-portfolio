@@ -618,9 +618,9 @@ body {
 .video-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem;
+  padding: 0rem;
   gap: 1rem;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .yt-video video {
@@ -651,7 +651,7 @@ body {
   justify-content: center;
   gap: 1rem;
   backdrop-filter: blur(8px);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   background-color: #ededed0a;
 }
@@ -1095,8 +1095,10 @@ body {
 }
 
 .yt-video video {
-  width: 528px;
-  height: 300px;
+  /* width: 528px; */
+  /* height: 300px; */
+  width : 100%;
+  height: auto;
 }
 
 .video-details {
